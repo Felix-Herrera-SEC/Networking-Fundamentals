@@ -1,85 +1,64 @@
-# 🌐 Networking Fundamentals — Lab 07: Network Troubleshooting & Connectivity Analysis
+# 🌐 Networking Fundamentals — Lab 08: Network Reconnaissance & SOC Network Investigation
 
 ## Objective
-Develop a systematic approach to diagnosing network connectivity issues from a Linux endpoint by analyzing IP configuration, routing, DNS resolution, ICMP connectivity, TCP ports, sockets, and application-layer responses.
-
+Perform authorized network reconnaissance and endpoint network analysis using Linux command-line tools. Identify active hosts, exposed TCP services, network connections, and potential security concerns while documenting findings using a structured SOC investigation methodology.
 
 ## Skills Demonstrated
--Network connectivity troubleshooting
+-Network host discovery
 
--Linux network diagnostics
+-TCP port scanning
 
--IP configuration analysis
+-Service identification
 
--Routing-table analysis
+-Nmap scan interpretation
 
--Default gateway verification
+-Linux socket and process analysis
 
--DNS troubleshooting
+-DNS resolution and IP identification
 
--ICMP connectivity testing
+-Local network enumeration
 
--TCP port testing
+-Basic network exposure assessment
 
--Socket analysis
+-Suspicious connection investigation
 
--HTTP/HTTPS troubleshooting
+-SOC alert triage
 
--Layered network troubleshooting
+-Security evidence collection
 
--Network issue isolation
-
--SOC-oriented network triage
-
-
-
+-Technical investigation reporting
 
 ## Tools used
-Ubuntu Linux
-
-Bash
-
-VirtualBox
-
-ip
-
-ping
-
-dig
-
-nslookup
-
+nmap
 ss
-
-nc
-
+ip
+dig
+n
 curl
-
+python3
+ping
 traceroute
 
 ## Steps performed
--Verified endpoint network configuration
+-Established a network baseline.
 
--Validated routing and default gateway configuration
+-Performed authorized host discovery.
 
--Tested local and external IP connectivity
+-Identified exposed TCP ports.
 
--Tested DNS resolution separately from IP connectivity
+-Examined services and associated processes.
 
--Examined active and listening sockets
+-Generated controlled network activity.
 
--Tested TCP port connectivity
+-Correlated scan findings with endpoint network data.
 
--Tested application-layer HTTP/HTTPS communication
+-Investigated a simulated suspicious connection.
 
--Traced traffic toward remote destinations
-
--Used a structured troubleshooting methodology to isolate network issues
-
+-Documented findings and remediation recommendations.
 
 ## evidence (screenshots)
 
 
 
 ## SOC relevance 
-SOC analysts frequently need to determine whether failed or suspicious network activity is caused by malicious behavior, network configuration, DNS failure, firewall filtering, service availability, or application problems. Systematic network troubleshooting prevents incorrect conclusions during alert triage.
+Network reconnaissance and service enumeration help SOC analysts establish an endpoint's expected network behavior, identify unnecessary exposed services, investigate suspicious connections, and correlate firewall, SIEM, and endpoint telemetry.
